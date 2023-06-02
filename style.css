@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  min-height: 100vh;
+  background-color: #f2ebe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mobile-img {
+  display: none;
+}
+
+img {
+  /* max-height: 100%; */
+  max-width: 43%;
+  border-radius: 30px 0 0 30px;
+}
+
+#card {
+  max-width: 600px;
+  background-color: #ffffff;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  color: black;
+  margin: 10px 20px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.text-part {
+  max-width: 57%;
+  height: 350px;
+  padding: 15px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  max-width: 70%;
+}
+
+.product-tag {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #6c7289;
+  letter-spacing: 4px;
+}
+.product-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #6c7289;
+  letter-spacing: 2px;
+}
+
+.price {
+  margin: 8px 0;
+}
+
+.price span {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  color: #3c8067;
+}
+
+.price del {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #6c7289;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #3c8067;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #2c5a49;
+}
+
+@media (max-width: 624px) {
+  #wrapper {
+    padding: 15px 10px;
+  }
+  #mobile-img {
+    display: block;
+  }
+  #desktop-img {
+    display: none;
+  }
+  #card {
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+  #card {
+    max-width: 350px;
+    margin: 0px 0px;
+    padding-bottom: 50px;
+  }
+  .text-part {
+    max-width: 100%;
+    padding: 25px 40px 0 40px;
+    gap: 15px;
+  }
+  h1 {
+    max-width: 100%;
+  }
+  .price {
+    margin: 3px 0;
+  }
+}
